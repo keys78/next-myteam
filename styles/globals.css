@@ -22,7 +22,6 @@
 body {
   font-family: var(--font);
   position: relative;
-  /* overflow: hidden; */
   color: var(--white);
   overflow-x: hidden;
   max-width: 1920px;
