@@ -1,13 +1,13 @@
-const CustomToggle = () => {
+// const CustomToggle = () => {
     
-    return (
-        <div className="toggle-side">
-            <div onClick={() => setIsActiveBurger(!isActiveBurger)} className={`${isActiveBurger ? 'hamburger is-active' : 'hamburger'}`}  id="hamburger-9">
-                <span className="line"></span>
-                <span className="line"></span>
-                <span className="line"></span>
-            </div>
-        </div>
-    );
-}
-export default CustomToggle;
+//     return (
+//         <div className="toggle-side">
+//             <div onClick={() => setIsActiveBurger(!isActiveBurger)} className={`${isActiveBurger ? 'hamburger is-active' : 'hamburger'}`}  id="hamburger-9">
+//                 <span className="line"></span>
+//                 <span className="line"></span>
+//                 <span className="line"></span>
+//             </div>
+//         </div>
+//     );
+// }
+// export default CustomToggle;

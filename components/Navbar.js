@@ -8,7 +8,7 @@ const Navbar = () => {
         <>
             <nav className="flex items-center justify-between gen-wrapper pt-16 text-xl">
                 <div className="flex space-x-3 items-center">
-                    <Link href={'/'}><a><img className="sm:pr-10 pr-0 " src="/images/logo.svg" /></a></Link>
+                    <Link href='/'><a><img className="sm:pr-10 pr-0 " src="/images/logo.svg" /></a></Link>
                     <Link href="/"><a className="font-normal hide-mobile">home</a></Link>
                     <Link href="/about"><a className="font-normal hide-mobile" >about</a></Link>
                 </div>

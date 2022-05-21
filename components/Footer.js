@@ -6,7 +6,7 @@ const Footer = () => {
             <section className="gen-wrapper footer-style py-10">
                 <div className="order-1 flex sm:flex-row flex-col sm:items-start items-center justify-between">
                     <div className="flex flex-col justify-between h-full">
-                        <Link href={'/'}><a><img className="logo-adjust" src="/images/logo.svg" /></a></Link>
+                        <Link href='/'><a><img className="logo-adjust" src="/images/logo.svg" /></a></Link>
                         <div className="flex items-center justify-between sm:pt-0 pt-4" >
                             <Link href="/"><a className="font-normal">home</a></Link>
                             <Link href="/about"><a className="font-normal">about</a></Link>
