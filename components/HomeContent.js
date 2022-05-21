@@ -8,7 +8,7 @@ const HomeContent = () => {
                 <div className="home-part-one flex lg:flex-row flex-col items-start justify-between gen-wrapper lg:py-40 py-16">
                     <div className="part-one-header">
                         <div className="style-append-2 sm:mb-16 mb-8"></div>
-                        Build & manange distributed team like no one else.
+                        Build &#38; manange distributed team like no one else.
                     </div>
                     <div className="line-card-wrapper">
                         <LineCard />
