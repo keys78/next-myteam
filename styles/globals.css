@@ -85,7 +85,8 @@ body {
 
 
 /* footer */
-.order-1 { margin: 160px;}
+.order-1 { max-width: 160px; }
 .order-2 {max-width: 163px; font-size: 15px; color: var(--robinBlue); line-height: 24px;}
 
 .footer-style { display: grid; grid-template-columns: repeat(4, 1fr);}
+.order-3 { grid-column: span 2 / span 4; text-align: right;}
