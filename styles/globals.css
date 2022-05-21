@@ -26,7 +26,6 @@ body {
   overflow-x: hidden;
   max-width: 1920px;
   margin: 0 auto;
-  border:2px solid yellow;
 }
 
 .sacramento { background: var(--sacramentoGreen);}
@@ -44,6 +43,7 @@ body {
 
 /* Navbar */
 .contact-us { border:2px solid var(--white); padding: 7px 28px; border-radius: 30px; font-weight: 400;}
+
 
 /* Hero */
 .hero-heading {font-size: 100px;line-height: 100px; font-weight: 800; font-family: var(--font);}
@@ -80,7 +80,7 @@ body {
 .contact-us-2 { border:2px solid var(--sacramentoGreen); padding: 7px 28px; border-radius: 30px; font-size: 22x; font-weight: 600; color: var(--sacramentoGreen);}
 .get-started { color: var(--sacramentoGreen); font-size: 48px; font-weight: bold; }
 
-.toggle-side { display: none;}
+.toggle-side { display: none; z-index: 9;}
 /* Hamburger */
 .hamburger .line{
   width: 40px;
@@ -156,6 +156,19 @@ body {
 }
 
 
+.mobile-nav {
+  background: var(--darkGreen);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 40px;
+  display: none;
+}
+
+
 /* footer */
 .order-1 { max-width: 460px; }
 .order-2 {max-width: 163px; font-size: 15px; color: var(--robinBlue); opacity: 0.7; line-height: 24px;}
@@ -218,6 +231,7 @@ body {
 }
 
 @media screen and (max-width: 640px) {
+  .mobile-nav { display: block;}
   .hide-mobile { display: none; }
   .toggle-side { display: block;}
   .gen-wrapper { padding-right: 30px; padding-left: 30px; }

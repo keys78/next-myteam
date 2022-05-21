@@ -22,7 +22,7 @@ const Footer = () => {
 
                 <div className="order-3 flex lg:flex-col sm:flex-row flex-col justify-between lg:pt-0 pt-4">
                     <div className="flex items-center lg:justify-end sm:justify-start justify-center">
-                        <div class="flex items-center lg:space-x-4 space-x-8 sm:mt-0 mt-5 sm:mb-0 mb-4">
+                        <div className="flex items-center lg:space-x-4 space-x-8 sm:mt-0 mt-5 sm:mb-0 mb-4">
                             <a href="#">
                                 <img src="./images/icon-facebook.svg" alt="Facebook" />
                             </a>

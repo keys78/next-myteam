@@ -2,10 +2,10 @@ const CustomToggle = () => {
     
     return (
         <div class="toggle-side">
-            <div onClick={() => setIsActiveBurger(!isActiveBurger)} className={`${isActiveBurger ? 'hamburger is-active' : 'hamburger'}`} class="hamburger" id="hamburger-9">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
+            <div onClick={() => setIsActiveBurger(!isActiveBurger)} className={`${isActiveBurger ? 'hamburger is-active' : 'hamburger'}`}  id="hamburger-9">
+                <span className="line"></span>
+                <span className="line"></span>
+                <span className="line"></span>
             </div>
         </div>
     );
