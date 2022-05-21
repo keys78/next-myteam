@@ -1,11 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import GetStarted from '../components/GetStarted'
+import Hero from '../components/Hero'
+import HomeContent from '../components/HomeContent'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className='text-5xl'>
-      Hello World
+    <div>
+      <Hero />
+      <HomeContent />
+      <GetStarted />
     </div>
   )
 }
