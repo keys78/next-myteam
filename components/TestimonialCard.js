@@ -14,7 +14,7 @@ const TestimonialCard = () => {
         </div>
     ))
     return (
-        <div className="flex items-start justify-between pt-20" >
+        <div className="flex lg:flex-row flex-col lg:items-start items-center justify-between sm:pt-20 pt-12" >
             {renderTestimonials}
         </div>
     );

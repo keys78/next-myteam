@@ -3,7 +3,7 @@ const Hero = () => {
     return (
         <>
             <img className='page-art' src="/images/bg-pattern-home-1.svg" />
-            <section className="flex lg:text-left text-center lg:flex-row flex-col items-start justify-between gen-wrapper pt-32 lg:pb-64 pb-40">
+            <section className="flex lg:text-left text-center lg:flex-row flex-col items-start justify-between gen-wrapper sm:pt-32 pt-24 lg:pb-64 pb-40">
                 <div className="w-full">
                     <h1 className="hero-heading">Find the< br /> best <span className="accent">talent</span></h1>
                 </div>

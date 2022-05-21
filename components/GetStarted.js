@@ -4,7 +4,7 @@ const GetStarted = () => {
     return (
         <>
             <section className="lightCoral relative">
-                <div className="flex items-center justify-between pink-width gen-wrapper py-16">
+                <div className="flex sm:flex-row flex-col items-center justify-between pink-width gen-wrapper 2xl:py-16 py-24">
                     <div className="get-started">
                         Ready to get started?
                     </div>

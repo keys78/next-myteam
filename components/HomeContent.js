@@ -5,9 +5,9 @@ const HomeContent = () => {
     return (
         <>
             <section className="sacramento relative">
-                <div className="home-part-one flex items-start justify-between gen-wrapper py-40">
+                <div className="home-part-one flex lg:flex-row flex-col items-start justify-between gen-wrapper lg:py-40 py-16">
                     <div className="part-one-header">
-                        <div className="style-append-2 mb-16"></div>
+                        <div className="style-append-2 sm:mb-16 mb-8"></div>
                         Build & manange distributed team like no one else.
                     </div>
                     <div className="line-card-wrapper">
@@ -19,10 +19,10 @@ const HomeContent = () => {
 
             <section className="relative">
                 <img className='page-art-4' src="/images/bg-pattern-home-4-about-3.svg" />
-                <div className="gen-wrapper py-40 relative">
-                    <div className="testimonial-heading">
+                <div className="gen-wrapper lg:py-40 sm:py-28 py-28 relative">
+                    <div className="testimonial-heading ">
                         <h1>
-                            Delivering real results for top<br /> companies. Some of our <span class="accent-2">success stories.</span>
+                            Delivering real results for top companies. Some of our <span class="accent-2">success stories.</span>
                         </h1>
                     </div>
                     <div>
