@@ -11,8 +11,8 @@ const Hero = () => {
                     <div className="hero-description">
                         <div className="style-append mb-16"></div>
                         Finding the right people and building high performing teams can be
-                        hard. Most companies aren't tapping into the abundance of global
-                        talent. We're about to change that.
+                        hard. Most companies aren&apos;t tapping into the abundance of global
+                        talent. We&apos;re about to change that.
                     </div>
                 </div>
             </section>
