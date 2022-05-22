@@ -226,6 +226,7 @@ body {
     font-size: 84px;
     line-height: 89px; }
 }
+@media screen and (max-width: 1200px) {   .hide-append-2 { display: none !important;} }
 @media screen and (max-width: 1200px) {
   .hero-heading { font-size: 64px; line-height: 69px; }
  .hero-description { font-size: 16px;}
@@ -246,6 +247,8 @@ body {
   .testimonial-heading { display: flex; align-items: center; justify-content: center;}
   .testimonial-heading > h1 {  font-size: 39px; max-width: 562px; line-height: 43px;}
   .get-started { font-size: 39px; }
+
+
 
 
   .footer-style { display: grid; grid-template-columns: repeat(2, 1fr);}
