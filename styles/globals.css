@@ -29,7 +29,9 @@ body {
 }
 
 .sacramento { background: var(--sacramentoGreen);}
+.jungle { background: var(--jungleGreen);}
 .lightCoral { background: var(--lightCoral);}
+.robin { background: var(--robinBlue);}
 .pink-width {     max-width: 1150px !important;}
 
 .layout-wrapper { background: var(--midnightGreen); overflow: hidden;}
@@ -56,6 +58,10 @@ body {
 .page-art-4 { position: absolute; top:0; left:0;}
 .page-art-5{ position: absolute; bottom:0; right:0;}
 .page-art-6{ position: absolute; bottom:0; left:0;}
+
+.page-art-about { position: absolute; right: -106px; bottom: 0;}
+.page-art-about-2 { position: absolute; left: -106px; top: 0;}
+.page-art-about-3 { position: absolute; right: 0; bottom: 0;}
 .quotes-art { margin: 0 auto -20px auto; }
 
 
@@ -176,6 +182,29 @@ body {
 .footer-style { display: grid; grid-template-columns: repeat(4, 1fr);}
 .order-1 { grid-column: span 2 / span 4; }
 .order-3 { grid-column: span 2 / span 4; text-align: right;}
+
+
+
+/* ABOUT */
+.about-heading {font-size: 64px; font-weight: bold; }
+.about-description { font-size: 18px; max-width: 740px;}
+
+.single-director-wrapper { background: var(--sacramentoGreen); max-width: 335px; text-align: center; padding: 26px 10px 40px 20px}
+.single-director > img { border:2px solid #fff; border-radius: 50%; width: 100px; margin: 0 auto;}
+.single-director > h1 { font-size: 18px; color: var(--raptureBlue) ; font-style: italic;}
+.single-director > h2 { font-size: 15px;}
+
+.dir-toggle { padding: 10px; border-radius: 40px; width: fit-content; cursor: pointer; text-align: center; margin: 0 auto -12px auto;}
+
+.rotate-dir { transform: rotate(45deg); transition: 0.4s;}
+.undo-rotate { transition: 0.4s;}
+
+
+
+
+
+
+
 
 
 
