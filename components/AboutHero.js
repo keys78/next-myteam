@@ -1,7 +1,7 @@
 const AboutHero = () => {
     return ( 
         <>
-        <section className="flex xl:text-left text-center xl:flex-row flex-col items-start justify-between gen-wrapper sm:pt-32 pt-24 xl:pb-40 pb-10">
+        <section className="flex xl:text-left text-center xl:flex-row flex-col items-start justify-between gen-wrapper sm:pt-32 pt-24 xl:pb-40 sm:pb-10 pb-40">
             <div className="xl:w-2/12 w-full">
                 <h1 className="about-heading xl:text-left text-center">About</h1>
             </div>

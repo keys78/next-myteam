@@ -39,7 +39,7 @@ const Directors = () => {
 
     return (
         <div>
-            <h1 className="text-4xl text-center pb-10 font-bold ">Meet the directors</h1>
+            <h1 className="lg:text-4xl md:text-3xl text-2xl  text-center pb-10 font-bold ">Meet the directors</h1>
             <div className='dir-wrapper'> {renderDirectors} </div>
         </div>
     );
