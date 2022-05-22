@@ -6,6 +6,13 @@ const kady = '/images/avatar-kady.jpg'
 const aiysha = '/images/avatar-aiysha.jpg'
 const arthur = '/images/avatar-arthur.jpg'
 
+const nikita = '/images/avatar-nikita.jpg'
+const duncan = '/images/avatar-christian.jpg'
+const cruz = '/images/avatar-cruz.jpg'
+const drake = '/images/avatar-drake.jpg'
+const griffin = '/images/avatar-griffin.jpg'
+const aden = '/images/avatar-aden.jpg'
+
 export const features = [
     {
         title: 'Experienced Individuals',
@@ -41,7 +48,46 @@ export const testimonial = [
     {
         name: 'Arthur Clarke',
         rank: 'Co-Founder of MyPhysio',
-        quote: ' “Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”',
+        quote: '“Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”',
         icon: arthur
+    },
+]
+
+export const directors = [
+    {
+        name: 'Nikita Marks',
+        rank: 'Founder & CEO',
+        quote: '“It always amazes me how much talent there is in every corner of the globe.”',
+        icon: nikita
+    },
+    {
+        name: 'Cristian Duncan',
+        rank: 'Co-founder & COO',
+        quote: '“Distributed teams required unique processes. You need to approach work in a new way.”',
+        icon: duncan
+    },
+    {
+        name: 'Cruz Hamer',
+        rank: 'Co-founder & CTO',
+        quote: '“Technology is at the forefront of enabling distributed teams. That\'s where we come in.”',
+        icon: cruz
+    },
+    {
+        name: 'Drake Heaton',
+        rank: 'Business Development Lead',
+        quote: '“Hiring similar people from similar backgrounds is a surefire way to stunt innovation.”',
+        icon: drake
+    },
+    {
+        name: 'Griffin Wise',
+        rank: 'Lead Marketing',
+        quote: '“Unique perspectives shape unique products, which is what you need to survive these days.”',
+        icon: griffin
+    },
+    {
+        name: 'Aden Allan',
+        rank: 'Head of Talent',
+        quote: '“Empowered teams create truly amazing products. Set the north star and let them follow it.”',
+        icon: aden
     },
 ]
