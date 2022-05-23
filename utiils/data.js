@@ -17,16 +17,19 @@ export const features = [
     {
         title: 'Experienced Individuals',
         desc: 'Our network is made up of highly experienced professionals who are passionate about what they do.',
+        contact: 'The quality of our talent network',
         icon: person
     },
     {
         title: 'Easy To Implement',
         desc: 'Our processes have been refined over years of implementation meaning our teams always deliver.',
+        contact: 'Usage & implementation of our software',
         icon: cog
     },
     {
         title: 'Enhanced Productivity',
         desc: 'Our customized platform with in-built analytics helps you manage your distributed teams.',
+        contact: 'How we help drive innovation',
         icon: chart
     },
 ]
