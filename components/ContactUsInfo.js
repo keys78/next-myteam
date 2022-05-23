@@ -3,7 +3,7 @@ import { features } from "../utiils/data";
 const ContactUsInfo = () => {
 
     const renderContactDetails = features && features.map((val, i) => (
-        <div key={i} className="line-card">
+        <div key={i} className="line-card-contact">
             <div>
                 <img src={val.icon} alt="icons" />
             </div>
@@ -16,10 +16,12 @@ const ContactUsInfo = () => {
 
     return (
         <>
-            <div className="w-full contact-us-info">
-                <h1 className="about-heading xl:text-left text-center">Contact</h1>
-                <h2 className="ask-about">Ask us about</h2>
-                <div> {renderContactDetails}</div>
+            <div className="w-full re-ad">
+                <div className="contact-us-info lg:text-left text-center">
+                    <h1 className="about-heading ">Contact</h1>
+                    <h2 className="ask-about">Ask us about</h2>
+                </div>
+                <div className="contact-us-info-2"> {renderContactDetails}</div>
             </div>
 
             <img className='page-art' src="/images/bg-pattern-about-2-contact-1.svg" />

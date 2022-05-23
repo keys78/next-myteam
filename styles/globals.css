@@ -17,6 +17,8 @@
 
   /* TEXT */
   --font: 'Livvic', sans-serif;
+
+  --transition: all 250ms ease-in-out;
 }
 
 body {
@@ -68,8 +70,13 @@ body {
 
 /* PART ONE */
 .part-one-header { font-size: 48px; max-width: 450px; line-height: 53px; font-weight: 600;}
+
 .line-card { display: grid; grid-template-columns: 20% 80%; margin-top: 40px;}
 .line-card-wrapper { max-width: 570px;}
+
+.line-card-contact { display: grid; grid-template-columns: 20% 80%; margin-top: 40px;}
+.line-card-wrapper-contact { max-width: 570px;}
+
 .feature-heading { color: var(--lightCoral); font-size: 18px; margin-bottom: 20px; font-weight: bold;}
 
 
@@ -212,28 +219,40 @@ body {
 /* Contact Us */
 .ask-about { color: var(--lightCoral); font-size: 32px; font-weight: bold;}
 .contact-us-info { max-width: 530px;}
+.contact-us-info-2 { max-width: 530px;}
 
+/* form group */
 .form-container { width: 100%; max-width: 530px;}
-.input-group { all: unset; border-bottom: 2px solid var(--white); padding: 10px 20px; width: 100%;}
+.input-group { all: unset; border-bottom: 1px solid var(--white); padding: 15px 20px; width: 100%; width: -moz-available;   width: -webkit-fill-available; width: fill-available;}
+textarea{ all: unset; border-bottom: 1px solid var(--white); padding: 10px 20px; width: 100%; width: -moz-available;   width: -webkit-fill-available; width: fill-available;}
 .input-group::placeholder { color: var(--white) ; opacity: 0.5;}
-.input-group:focus { border-bottom: 2px solid var(--lightCoral);}
-/* .error-field { display: none;} */
+.input-group:focus { border-bottom: 1px solid var(--white);}
 
+.input-group[type='text']:invalid:focus,
+.input-group[type='email']:invalid:focus,
+textarea:invalid:focus { border-color: var(--lightCoral);}
+
+.input-group[type='text']:invalid:focus::placeholder,
+.input-group[type='email']:invalid:focus::placeholder,
+textarea:invalid:focus::placeholder { color: rgb(255, 160, 160);}
+
+div > .input-group[type='text']:invalid:focus ~ .error-field,
+div > .input-group[type='email']:invalid:focus ~ .error-field { margin-top: -0.875rem; margin-bottom: 1rem; max-height: 1rem;}
+
+.error-field { max-height: 0; transition: var(--transition); overflow: hidden; margin-top: 20px; color: var(--lightCoral); font-size: 0.725rem; font-style: italic; padding-left: 0.75rem;}
+div > textarea:invalid:focus ~ .error-field-area { margin-top: -1.475rem; margin-bottom: 1rem; max-height: 1rem;}
+.error-field-area { max-height: 0; transition: var(--transition); overflow: hidden; color: var(--lightCoral); font-size: 0.725rem; font-style: italic; padding-left: 0.75rem;}
+
+.submit-btn {margin-top: 20px; transition: var(--transition); background: var(--white); color: var(--sacramentoGreen); padding: 10px 28px; border-radius: 30px; font-weight: 400;}
+.submit-btn:hover { transition: var(--transition); background: var(--raptureBlue);}
 
 
 
 /* Media Queries */
 
-/* @media screen and (max-width: 1400px) {
-  
-} */
-
-
 @media screen and (max-width: 1400px) {
   .page-art { display: none;}
-  .hero-heading {
-    font-size: 84px;
-    line-height: 89px; }
+  .hero-heading { font-size: 84px; line-height: 89px; }
 }
 
 
@@ -264,7 +283,8 @@ body {
   .testimonial-heading > h1 {  font-size: 39px; max-width: 562px; line-height: 43px;}
   .get-started { font-size: 39px; }
   .sponsors > img { max-width: 140px; }
-
+  .form-container { width: 100%; max-width: 100%;}
+  .contact-us-info { max-width: 100%;}
 
 
 
@@ -298,16 +318,18 @@ body {
   .sponsors > img { margin: 0 auto; max-width: 160px;}
 
   .page-art-about { bottom: -90px;}
-  
   .about-description { margin: 0 0; }
-
   .footer-style { text-align: center;}
 }
 
 
 @media screen and (max-width: 500px) {
   .line-card { display: grid; grid-template-columns: 100%; text-align: center; margin-top: 40px;}
+  .line-card-contact { display: grid; grid-template-columns: 100%; text-align: center; margin-top: 40px;}
   .line-card > div:nth-of-type(1) > img { margin: 0 auto; margin-bottom: 16px;}
+
+  .re-ad { margin: 0 !important; }
+
   .feature-heading { font-size: 16px; margin-bottom: 10px; }
   .feature-description { font-size: 14px;}
 
@@ -320,8 +342,5 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-  .hero-heading {
-    font-size: 32px;
-    line-height: 43px;
-}
+  .hero-heading { font-size: 32px; line-height: 43px; }
 }
