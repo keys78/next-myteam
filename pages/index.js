@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
 
       {active &&  <button onClick={() => setIsPopup(!isPopup)} className="fixed z-50 top-1 right-1">
-        <img className="w-20 h-20 animate-pulse rounded-full" src="/images/skull.gif" alt="skull" />
+        <img className="w-16 h-16 animate-pulse rounded-full" src="/images/skull.gif" alt="skull" />
       </button> }
       <ToastContainer limit={3} />
       <Popup isPopup={isPopup} setIsPopup={setIsPopup}/>
