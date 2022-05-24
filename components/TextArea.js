@@ -11,7 +11,7 @@ const TextArea = ({ placeholder, type }) => {
             {/* <div>
                 if I were your eulogy, my inks will dry.
                 If I were to read your eulogy, words would come in battered forms.
-                You were strong person Gina, and I'd keep the memories safe.
+                You were strong person, and I'd keep the memories safe.
                 Rest On Cartel.
             </div> */}
         </div>
