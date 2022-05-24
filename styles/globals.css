@@ -293,6 +293,17 @@ div > textarea:invalid:focus ~ .error-field-area { margin-top: -1.475rem; margin
 .lair-auth-wrapper { width: 100%; height: 100vh; background: #000000b2; position: fixed; top: 0; display: flex; align-items: center; justify-content: center;}
 .lair-auth-content { width: 100%; padding: 40px 20px; max-width: 600px; border-radius: 8px; margin: 0 10px;}
 
+/* Crossword */
+.words-wrapper { width: 100%; height: 100vh; background: #000000b2; position: fixed; top: 0; display: flex; align-items: center; justify-content: center; z-index: 9999;}
+.words-content { width: 100%; padding: 40px 20px; max-width: 600px; border-radius: 8px; margin: 0 10px; background-color: var(); background: #FFF; 
+    color: var(--sacramentoGreen); position: relative;
+  ;}
+.words-content > h1 span:nth-of-type(1) { padding:0 7px; border-radius: 13px; margin-right: 5px; background-color: blue; color: #fff;}
+
+.words > span { border: 1px solid #0000006f; padding: 1px; text-align: center; font-family: 'Nosifer', cursive !important;}
+.words { display: grid; grid-template-columns: repeat(10, 1fr);}
+.popup-heading { font-size: 14px; color: #000000bc; font-style: italic; font-family: 'Nosifer', cursive !important; padding-bottom: 20px; }
+
 
 /* Media Queries */
 

@@ -1,26 +1,34 @@
-// import React, { useState } from "react";
-// import { ReactSortable, Sortable, MultiDrag, Swap } from "react-sortablejs";
+import React, { useState } from 'react'
+import { words } from '../utiils/data'
+import { useActive } from './hooks/useActive';
 
-// // mount whatever plugins you'd like to. These are the only current options.
-// // Sortable.mount(new MultiDrag(), new Swap());
+const Popup = ({ isPopup, setIsPopup }) => {
+    
+    const active = useActive(1000)
 
-// const Popup = () => {
-//   const [state, setState] = useState([
-//     { id: 1, name: "shrek" },
-//     { id: 2, name: "fiona" },
-//   ]);
+    var items = [...words];
+    const renderWords = items.map(function (item) {
+        return <span>{item}</span>;
+    });
 
-//   return (
-//     <ReactSortable
-//       multiDrag // enables mutidrag
-//       // OR
-//       swap // enables swap
-//     >
-//       {state.map((item) => (
-//         <div key={item.id}>{item.name}</div>
-//       ))}
-//     </ReactSortable>
-//   );
-// };
 
-// export default Popup;
+    return (
+        isPopup && 
+        <div className="words-wrapper">
+            <div className="words-content">
+            <div onClick={() => setIsPopup(false)} className="absolute top-0 right-2 font-bold cursor-pointer text-2xl">x</div>
+
+                <h1 className="popup-heading"> <span className="animate-pulse">&#8505;</span> Hidden here is a word that matches the name of a place on this page,
+                    find the word on the crosswords, and click on it on the page to reveal the path to the secret lair...</h1>
+                <div className="words">
+                    {renderWords}
+                </div>
+                <div className={active ? 'text-green-500' : 'text-red-500'}>
+                    {active ? 'User is Active' : 'User is Inactive'}
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Popup
