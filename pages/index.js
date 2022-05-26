@@ -14,7 +14,7 @@ import { variants } from '../utiils/Animations';
 export default function Home() {
   const [isPopup, setIsPopup] = useState(false)
 
-  const active = useActive(5000)
+  const active = useActive(2000)
 
   return (
     <motion.div

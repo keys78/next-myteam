@@ -49,11 +49,7 @@ const Footer = () => {
                 </section>
             </footer>
 
-            <AnimatePresence>
-            {isModal && 
-            <LairAuth setIsModal={setIsModal} isModal={isModal} />}
-            </AnimatePresence>
-           
+            <LairAuth setIsModal={setIsModal} isModal={isModal} />
         </>
     );
 }
