@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { toast } from 'react-toastify';
 import { useSpeechSynthesis } from "react-speech-kit";
 import { modalVariants } from '../utiils/Animations';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 
 
@@ -12,13 +12,8 @@ const LairAuth = ({ setIsModal, isModal }) => {
     const router = useRouter();
     const [value, setValue] = useState('')
     const [toastValue, setToastValue] = useState('😈 hahahahahaha!')
-    const [soundVal, setSoundVal] = useState('troll.mp3')
-    const [soundValClap, setSoundValClap] = useState('clap.mp3')
     const { speak } = useSpeechSynthesis();
     const key = 'keys'
-
-    // const audio = new Audio('troll.mp3');
-    // const audio2 = new Audio('clap.mp3')
 
 
     // fisher-yates
@@ -81,7 +76,7 @@ const LairAuth = ({ setIsModal, isModal }) => {
         // <AnimatePresence>
             isModal &&
                 <div className="lair-auth-wrapper">
-                    <div  className="absolute top-4 right-4 font-bold cursor-pointer text-2xl">x</div>
+                    <div  className="absolute top-4 right-4 font-bold cursor-pointer text-2xl p-6 bg-black z-30">x</div>
                     <motion.form
                         onSubmit={(e) => verifyLair(e)}
                         className="lair-auth-content jungle"

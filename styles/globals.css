@@ -293,7 +293,7 @@ div > textarea:invalid:focus ~ .error-field-area { margin-top: -1.475rem; margin
 .details-head { color: var(--lightCoral); font-weight: 100; font-size: 20px; padding-bottom: 20px;}
 
 /* LAIR */
-.lair-auth-wrapper { width: 100%; height: 100vh; background: #000000b2; z-index: 9999999999; position: fixed; top: 0; display: flex; align-items: center; justify-content: center;}
+.lair-auth-wrapper { width: 100%; height: 100vh; background: #000000b2; z-index: 0; position: fixed; top: 0; display: flex; align-items: center; justify-content: center;}
 .lair-auth-content { width: 100%; padding: 40px 20px; max-width: 600px; border-radius: 8px; margin: 0 10px;}
 
 /* Crossword */

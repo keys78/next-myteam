@@ -18,15 +18,14 @@ export default function Home() {
 
   return (
     <motion.div
-     
     >
       <Head>
         <title>My Team</title>
         <meta name="description" content="my team website created with next" />
-        <link rel="icon" href="/images/logo.svg" />
+        <link rel="icon" href="android-icon-96x96.png" />
       </Head>
 
-      {active && <button onClick={() => setIsPopup(!isPopup)} className="fixed z-50 top-1 right-1">
+      {active && <button onClick={() => setIsPopup(!isPopup)} className="fixed z-10 top-1 right-1">
         <img className="w-12 h-12 animate-pulse rounded-full" src="/images/skull.gif" alt="skull" />
       </button>}
       <ToastContainer limit={3} />
