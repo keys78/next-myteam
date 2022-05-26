@@ -1,11 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { toast } from 'react-toastify';
 import { useSpeechSynthesis } from "react-speech-kit";
+import { modalVariants } from '../utiils/Animations';
+import { motion } from 'framer-motion';
 
 
 
-const LairAuth = ({ setIsModal }) => {
+const LairAuth = ({ setIsModal, isModal }) => {
+    const modalRef = useRef();
     const router = useRouter();
     const [value, setValue] = useState('')
     const [toastValue, setToastValue] = useState('😈 hahahahahaha!')
@@ -17,7 +20,7 @@ const LairAuth = ({ setIsModal }) => {
     const audio2 = new Audio('clap.mp3')
 
 
-    // fish-yates
+    // fisher-yates
     function shuffle(array) {
         let currentIndex = array.length, randomIndex;
         while (currentIndex != 0) {
@@ -36,6 +39,11 @@ const LairAuth = ({ setIsModal }) => {
     var soundArr = ['troll.mp3', 'horror-new.mp3']
     shuffle(arr, soundArr);
 
+    useEffect(() => { document.body.addEventListener('mousedown', handleClickOutside) })
+    const handleClickOutside = (event) => {
+        modalRef.current && !modalRef.current.contains(event.target) && setIsModal(!isModal)
+    };
+
 
 
 
@@ -45,7 +53,7 @@ const LairAuth = ({ setIsModal }) => {
         if (value.toString() !== key) {
             setToastValue(arr[0])
             setSoundVal(soundArr[0])
-            toast.error(toastValue, { autoClose: 2000});
+            toast.error(toastValue, { autoClose: 2000 });
             console.log(toastValue);
             audio.play();
             // speak({ text: toastValue })
@@ -53,7 +61,7 @@ const LairAuth = ({ setIsModal }) => {
 
         } else {
             setIsModal(false)
-            toast.success('Good One Lad', { autoClose: 2000});
+            toast.success('Good One Lad', { autoClose: 2000 });
             audio2.play();
 
             setTimeout(() => {
@@ -65,13 +73,22 @@ const LairAuth = ({ setIsModal }) => {
 
     return (
 
-        <div className="lair-auth-wrapper">
-            <div onClick={() => setIsModal(false)} className="absolute top-4 right-4 font-bold cursor-pointer text-2xl">x</div>
-            <form onSubmit={(e) => verifyLair(e)} className="lair-auth-content jungle">
-                <h1 className='nosifer'>Enter secret keys of the Lair</h1>
-                <input required className="input-group nosifer" value={value} placeholder={'secret code'} type="text" onChange={(e) => setValue(e.target.value)} />
-                <button type="submit" className="submit-btn nosifer">submit</button>
-            </form>
+        <div  className="lair-auth-wrapper">
+            <div onClick={() => setIsModal(!isModal)} className="absolute top-4 right-4 font-bold cursor-pointer text-2xl">x</div>
+                <motion.form
+                    onSubmit={(e) => verifyLair(e)}
+                    className="lair-auth-content jungle"
+                    variants={modalVariants}
+                    initial="initial"
+                    animate="final"
+                    exit="exit"
+                    ref={modalRef}
+                >
+                    <h1 className='nosifer'>Enter secret keys of the Lair</h1>
+                    <input required className="input-group nosifer" value={value} placeholder={'secret code'} type="text" onChange={(e) => setValue(e.target.value)} />
+                    <button type="submit" className="submit-btn nosifer">submit</button>
+                </motion.form>
+
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import LairAuth from "./LairAuth";
 import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 
 const Footer = () => {
     const [isModal, setIsModal] = useState(false)
@@ -48,7 +49,11 @@ const Footer = () => {
                 </section>
             </footer>
 
-            {isModal && <LairAuth setIsModal={setIsModal}/>}
+            <AnimatePresence>
+            {isModal && 
+            <LairAuth setIsModal={setIsModal} isModal={isModal} />}
+            </AnimatePresence>
+           
         </>
     );
 }

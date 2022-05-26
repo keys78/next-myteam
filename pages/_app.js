@@ -10,11 +10,9 @@ function MyApp({ Component, pageProps, router }) {
   return (
 
     <Layout>
-      <AnimatePresence exitBeforeEnter
-        initial={false}
-        onExitComplete={() => window.scrollTo(0, 0)}>
+     
         <Component {...pageProps} key={url} />
-      </AnimatePresence>
+    
     </Layout>
 
 
@@ -22,3 +20,11 @@ function MyApp({ Component, pageProps, router }) {
 }
 
 export default MyApp
+
+
+ {/* <AnimatePresence  */}
+      // exitBeforeEnter
+        // initial={false}
+        // onExitComplete={() => window.scrollTo(0, 0)}
+        {/* > */}
+          {/* </AnimatePresence> */}
